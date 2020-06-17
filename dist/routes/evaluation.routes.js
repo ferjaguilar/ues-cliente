@@ -63,7 +63,9 @@ router.get('/all-evaluations', /*#__PURE__*/function () {
           case 0:
             _context2.prev = 0;
             _context2.next = 3;
-            return _evaluation["default"].find();
+            return _evaluation["default"].find().sort({
+              total_score: 1
+            });
 
           case 3:
             evaluationsDB = _context2.sent;
